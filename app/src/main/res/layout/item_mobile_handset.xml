@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/lay_main"
+    android:background="@android:color/transparent"
+    android:layout_marginLeft="@dimen/dimen_10dp"
+    android:layout_marginRight="@dimen/dimen_5dp"
+    android:layout_marginTop="@dimen/dimen_10dp"
+    android:layout_marginBottom="@dimen/dimen_5dp">
+
+    <ImageView
+        android:id="@+id/iv_image"
+        android:layout_width="@dimen/grid_image_dimen_200dp"
+        android:layout_height="@dimen/grid_image_dimen_200dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/no_picture_256"
+        android:background="@color/colorImgBg" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@+id/iv_image"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_price1"
+        android:background="@color/colorMobileTransparentBackground"
+        app:constraint_referenced_ids="tv_brandname1,tv_brand_detail,tv_price1"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tv_brandname1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@+id/iv_image"
+        app:layout_constraintRight_toRightOf="@+id/iv_image"
+        app:layout_constraintTop_toTopOf="@+id/iv_image"
+        android:padding="@dimen/dimen_10dp"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/text_size_16sp"
+        android:text="Apple"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tv_brand_detail"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintLeft_toLeftOf="@+id/iv_image"
+        app:layout_constraintRight_toRightOf="@+id/iv_image"
+        app:layout_constraintTop_toBottomOf="@+id/tv_brandname1"
+        app:layout_constraintBottom_toTopOf="@+id/tv_price1"
+        android:paddingLeft="@dimen/dimen_10dp"
+        android:paddingRight="@dimen/dimen_10dp"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/text_size_14sp"
+        android:text="Apple iPhone 8 Plus"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tv_price1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@+id/iv_image"
+        app:layout_constraintRight_toRightOf="@+id/iv_image"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_image"
+        android:padding="@dimen/dimen_10dp"
+        android:text="520"
+        android:textSize="@dimen/text_size_14sp"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"/>
+
+
+
+
+
+
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@+id/iv_image"
+        app:layout_constraintTop_toBottomOf="@+id/iv_image"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_price2"
+        app:constraint_referenced_ids="tv_brand_detail2,tv_price2"
+        android:visibility="visible"
+        android:background="@color/colorBrandPriceBg"/>
+    <TextView
+        android:id="@+id/tv_brand_detail2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@+id/iv_image"
+        app:layout_constraintTop_toBottomOf="@+id/iv_image"
+        android:padding="@dimen/dimen_10dp"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/text_size_14sp"
+        android:text="Apple"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tv_price2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@+id/iv_image"
+        app:layout_constraintTop_toBottomOf="@+id/tv_brand_detail2"
+        android:paddingLeft="@dimen/dimen_10dp"
+        android:paddingRight="@dimen/dimen_10dp"
+        android:paddingBottom="@dimen/dimen_10dp"
+        android:text="520"
+        android:textSize="@dimen/text_size_14sp"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

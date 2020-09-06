@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Axiom</string>
+    <string name="axiom_telecom">Axiom Telecom</string>
+
+    <string name="error_network_connection">Please connect to Network</string>
+    <string name="error_oops_something_not_right">Oops Something\'s not right</string>
+    <string name="error_server">Server Error</string>
+
+    <string name="screen_title_my_store">My Store</string>
+    <string name="dollar_sign">$</string>
+    <string name="text_no_record_found">No Record Found</string>
+    <string name="text_no_search_result">No Search Results</string>
+    <string name="text_search">Search for Phone</string>
+    <string name="search_handset_invalid_characters">Please Enter atleast 3 characters to search</string>
+    <string name="text_filter_by">Filter By</string>
+    <string name="reset">Reset</string>
+</resources>
